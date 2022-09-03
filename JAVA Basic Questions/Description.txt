@@ -1,0 +1,5 @@
+This folder contains java basic questions to kickstart DSA in java.
+
+Format:Every folder contains 2 files.
+1 is Question description.
+2 Solution to the question.
