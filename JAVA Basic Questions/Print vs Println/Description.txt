@@ -1,0 +1,6 @@
+Que:- Difference between print and println in java.
+print the pattern, using print and println
+*
+**
+***
+****

@@ -1,0 +1,14 @@
+Que:- You are required to print a "z" of size 5 using "*".
+
+For example:
+Sample Input:
+
+There is no input
+
+Sample Output:
+
+*****
+ *
+ * 
+* 
+*****
