@@ -17,14 +17,27 @@ public class RotateAnumber {
         // ask for rotation
         int r = S.nextInt();
         // Removing cycles
-        if (r > count) {
-            r = r % count;
+        if (r > 0) {
+            if (r > count) {
+                r = r % count;
+            }
+            int tenspower = (int) Math.pow(10, r);
+            int rotatedDigits = n % tenspower;
+            int leftNum = rotatedDigits * (int) Math.pow(10, (count - r));
+            int result = leftNum + (n / tenspower);
+            System.out.println(result);
+        } else {
+            r = r * (-1);
+            if (r > count) {
+                r = r % count;
+            }
+            int tenspower = (int) Math.pow(10, count - r);
+            int rotatedDigits = n / tenspower;
+            int leftdigits = n % (int) Math.pow(10, (count - r));
+            int leftNum = leftdigits * (int) Math.pow(10, r);
+            int result = leftNum + rotatedDigits;
+            System.out.println(result);
         }
-        int tenspower = (int) Math.pow(10, r);
-        int rotatedDigits = n % tenspower;
-        int leftNum = rotatedDigits * (int) Math.pow(10, (count - r));
-        int result = leftNum + (n / tenspower);
-        System.out.println(result);
 
     }
 }
