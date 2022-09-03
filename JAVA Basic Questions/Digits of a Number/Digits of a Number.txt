@@ -1,0 +1,12 @@
+Question:- Print digits of a number from left to right.
+
+example:
+
+59648
+
+output
+5
+9
+6
+4
+8
