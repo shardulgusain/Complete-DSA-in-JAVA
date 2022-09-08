@@ -1,0 +1,1 @@
+Take a input string and print all its substring
