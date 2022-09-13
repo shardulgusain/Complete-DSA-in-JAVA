@@ -16,7 +16,13 @@ public class PowerLinear {
         if (p == 0) {
             return 1;
         }
-        int powLinear = x * (powerLinear(x, p - 1));
-        return powLinear;
+        int power = powerLinear(x, p / 2);
+        if (p % 2 == 0) {
+            int result = power * power;
+            return result;
+        } else {
+            int result = power * power * x;
+            return result;
+        }
     }
 }
